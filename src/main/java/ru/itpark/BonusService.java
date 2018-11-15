@@ -1,7 +1,7 @@
 package ru.itpark;
 
 public class BonusService {
-    public int calculateBonus(int purchaseAmount, int totalAmount) { // FIXME: придумать нормальное имя для totalAmount
+    public int calculateBonus(int purchaseAmount, int totalAmount) {
         int result = 0;
 
         int minBlueValue = 1;
@@ -14,28 +14,21 @@ public class BonusService {
 
         int bonusGold = 100;
 
-        // TODO: убрать hardcoded значения в локальные переменные
         if (totalAmount >= minBlueValue && totalAmount <= maxBlueValue) {
-            // TODO: blue card
-            // TODO: calculate result
+            // blue card
 
             result = purchaseAmount / 1000 * bonusBlue;
 
         } else if (totalAmount >= minSilverValue && totalAmount <= maxSilverValue) {
-            // TODO: silver card
-            // TODO: calculate result
+            // silver card
 
             result = purchaseAmount / 1000 * bonusSilver;
 
         } else {
-            // TODO: gold card
-            // TODO: calculate result
+            // gold card
 
             result = purchaseAmount / 1000 * bonusGold;
-
         }
-
-        // Ctrl + Alt + L - выравнивание
         return result;
     }
 }
