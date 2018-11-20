@@ -1,7 +1,7 @@
 package ru.itpark;
 
 public class BonusService {
-    public int calculateBonus(int purchaseAmount, int totalAmount) {
+    public int calculateBonus(double purchaseAmount, double totalAmount) {
         int result = 0;
 
         int minBlueValue = 1;
@@ -14,20 +14,23 @@ public class BonusService {
 
         int bonusGold = 100;
 
-        if (totalAmount >= minBlueValue && totalAmount <= maxBlueValue) {
+        if (totalAmount == 0) {
+            result = 0;
+
+        } else if (totalAmount >= minBlueValue && totalAmount <= maxBlueValue) {
             // blue card
 
-            result = purchaseAmount / 1000 * bonusBlue;
+            result = (int)purchaseAmount / 1000 * bonusBlue;
 
         } else if (totalAmount >= minSilverValue && totalAmount <= maxSilverValue) {
             // silver card
 
-            result = purchaseAmount / 1000 * bonusSilver;
+            result = (int)purchaseAmount / 1000 * bonusSilver;
 
         } else {
             // gold card
 
-            result = purchaseAmount / 1000 * bonusGold;
+            result = (int)purchaseAmount / 1000 * bonusGold;
         }
         return result;
     }
