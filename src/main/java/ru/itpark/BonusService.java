@@ -1,7 +1,7 @@
 package ru.itpark;
 
 public class BonusService {
-    public int calculateBonus(double purchaseAmount, double totalAmount) {
+    public int calculateBonus(int purchaseAmount, int totalAmount) {
         int result = 0;
 
         int minBlueValue = 1;
