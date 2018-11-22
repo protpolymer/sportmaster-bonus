@@ -33,7 +33,7 @@ class BonusServiceTest {
             assertEquals(200, bonus);
         }
         {
-            //Positive test for blue card
+            //Positive test for zero total amount purchases
 
             BonusService bonusService = new BonusService();
             int bonus = bonusService.calculateBonus(1_000, 0);
