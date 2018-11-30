@@ -13,21 +13,17 @@ public class BonusService {
 
         if (totalAmount == 0) {
             return 0;
-
-        } else if (totalAmount <= maxBlueValue) {
-            // blue card
-
-            return purchaseAmount / 1000 * bonusBlue;
-
-        } else if (totalAmount <= maxSilverValue) {
-            // silver card
-
-            return purchaseAmount / 1000 * bonusSilver;
-
-        } else {
-            // gold card
-
-            return purchaseAmount / 1000 * bonusGold;
         }
+
+        if (totalAmount <= maxBlueValue) {
+            // blue card
+            return purchaseAmount / 1000 * bonusBlue;
+        }
+        if (totalAmount <= maxSilverValue) {
+            // silver card
+            return purchaseAmount / 1000 * bonusSilver;
+        }
+            // gold card
+            return purchaseAmount / 1000 * bonusGold;
     }
 }
