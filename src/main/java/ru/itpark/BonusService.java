@@ -24,6 +24,6 @@ public class BonusService {
             return purchaseAmount / 1000 * bonusSilver;
         }
             // gold card
-            return purchaseAmount / 1000 * bonusGold;
+        return purchaseAmount / 1000 * bonusGold;
     }
 }
