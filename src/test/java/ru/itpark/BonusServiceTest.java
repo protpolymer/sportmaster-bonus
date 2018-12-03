@@ -1,6 +1,7 @@
 package ru.itpark;
 
 import org.junit.jupiter.api.Test;
+import ru.itpark.service.BonusService;
 
 import static org.junit.jupiter.api.Assertions.*;
 

@@ -1,5 +1,7 @@
 package ru.itpark;
 
+import ru.itpark.service.BonusService;
+
 public class Main {
     public static void main(String[] args) {
 

@@ -1,4 +1,4 @@
-package ru.itpark;
+package ru.itpark.service;
 
 public class BonusService {
     public int calculateBonus(int purchaseAmount, int totalAmount) {
