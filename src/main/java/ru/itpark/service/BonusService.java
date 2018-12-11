@@ -23,7 +23,7 @@ public class BonusService {
             // silver card
             return purchaseAmount / 1000 * bonusSilver;
         }
-            // gold card
+        // gold card
         return purchaseAmount / 1000 * bonusGold;
     }
 }
